@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@nuxt/eslint": "1.8.0",
@@ -37,7 +38,9 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "nitro-cloudflare-dev": "^0.2.2",
     "shadcn-nuxt": "^2.2.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "wrangler": "^4.30.0"
   }
 }
