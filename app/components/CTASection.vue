@@ -44,7 +44,7 @@
             <div class="mt-12 pt-8 border-t border-border">
               <div class="flex items-center justify-center gap-3 mb-4">
                 <div class="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
-                  <img src="/assets/valtlfelipe.webp" alt="Profile Picture" class="w-12 h-12 rounded-full" >
+                  <NuxtImg src="/img/valtlfelipe.webp" alt="Profile Picture" class="w-12 h-12 rounded-full" />
                 </div>
                 <div class="text-left">
                   <div class="font-semibold text-foreground">Hey, I'm the creator!</div>

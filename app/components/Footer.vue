@@ -4,11 +4,11 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div class="space-y-4">
             <div class="flex items-center gap-3">
-              <img
-                src="/assets/logo.webp"
+              <NuxtImg
+                src="/img/logo.webp"
                 alt="Hedit"
                 class="w-8 h-8"
-              >
+              />
               <span class="text-xl font-bold text-foreground">Hedit</span>
             </div>
             <p class="text-muted-foreground">

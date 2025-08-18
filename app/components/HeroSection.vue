@@ -7,11 +7,11 @@
 
       <div class="relative z-10 text-center max-w-4xl mx-auto mt-40">
         <div class="mb-8 flex justify-center">
-          <img
-            src="/assets/logo.webp"
+          <NuxtImg
+            src="/img/logo.webp"
             alt="Hedit Logo"
             class="w-24 h-24 drop-shadow-lg hover:scale-110 transition-transform duration-300"
-          >
+          />
         </div>
 
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-primary/20 mb-8">
@@ -77,7 +77,7 @@
         </div>
 
         <div class="inline-flex mt-12">
-          <img src="/assets/hedit-screenshot.webp" alt="Hedit Screenshot" >
+          <NuxtImg src="/img/hedit-screenshot.webp" alt="Hedit Screenshot" />
         </div>
       </div>
     </section>

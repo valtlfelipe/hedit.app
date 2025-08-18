@@ -3,11 +3,11 @@
       <div class="max-w-6xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
           <NuxtLink to="/" class="flex items-center gap-3">
-            <img
-              src="/assets/logo.webp"
+            <NuxtImg
+              src="/img/logo.webp"
               alt="Hedit"
               class="w-8 h-8"
-            >
+            />
             <span class="text-xl font-bold text-foreground">Hedit</span>
           </NuxtLink>
 
