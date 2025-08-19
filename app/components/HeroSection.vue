@@ -73,7 +73,7 @@
           <div>Open source</div>
         </div> */} -->
       <div class="text-sm text-muted-foreground opacity-40">
-        <em>Available for Mac. Soon available for Windows.</em>
+        <em>Available for Mac & Linux. Soon available for Windows.</em>
       </div>
 
       <div class="inline-flex mt-12">
