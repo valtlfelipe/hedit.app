@@ -2,10 +2,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-08-18',
-  devtools: { enabled: true },
 
   modules: ['@nuxt/eslint', '@nuxt/scripts', '@nuxt/image', '@nuxt/icon', '@nuxt/fonts', 'shadcn-nuxt', 'nuxt-lucide-icons', '@nuxtjs/device', '@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxtjs/seo', 'nuxt-umami', 'nitro-cloudflare-dev'],
+  devtools: { enabled: true },
 
   app: {
     head: {
@@ -20,9 +19,11 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      ]
+      ],
     },
   },
+
+  css: ['~/assets/css/tailwind.css'],
 
   site: {
     url: 'https://hedit.app',
@@ -33,6 +34,22 @@ export default defineNuxtConfig({
     '/terms': { prerender: true },
     '/privacy': { prerender: true },
     '/human': { prerender: true },
+  },
+  compatibilityDate: '2025-08-18',
+
+  nitro: {
+    preset: 'cloudflare_module',
+
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
 
   eslint: {
@@ -48,40 +65,8 @@ export default defineNuxtConfig({
       '/cdn-cgi',
       '/api',
       '/_nuxt',
-      '/configuracoes',
-      '/pagamento',
-      '/chat/*',
+      '/thank-you',
     ],
-  },
-
-  sitemap: {
-    strictNuxtContentPaths: true,
-  },
-
-  umami: {
-    id: '4483964e-a22c-4ba7-9857-be25f8b1e55b',
-    host: 'https://umami.bluelab.cloud',
-    autoTrack: true,
-    useDirective: false,
-    ignoreLocalhost: true,
-    domains: ['hedit.app'],
-  },
-
-  css: ['~/assets/css/tailwind.css'],
-
-  vite: {
-    plugins: [
-      tailwindcss(),
-    ],
-  },
-
-  nitro: {
-    preset: "cloudflare_module",
-
-    cloudflare: {
-      deployConfig: true,
-      nodeCompat: true
-    }
   },
 
   shadcn: {
@@ -93,7 +78,21 @@ export default defineNuxtConfig({
      * Directory that the component lives in.
      * @default "./components/ui"
      */
-    componentDir: './app/components/ui'
-  }
+    componentDir: './app/components/ui',
+  },
+
+  sitemap: {
+    strictNuxtContentPaths: true,
+    exclude: ['/thank-you'],
+  },
+
+  umami: {
+    id: '4483964e-a22c-4ba7-9857-be25f8b1e55b',
+    host: 'https://umami.bluelab.cloud',
+    autoTrack: true,
+    useDirective: false,
+    ignoreLocalhost: true,
+    domains: ['hedit.app'],
+  },
 
 })

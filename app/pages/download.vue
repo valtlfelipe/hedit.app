@@ -58,7 +58,6 @@ const { data: release, pending: isLoading, error: isError } = await useAsyncData
         <DownloadCard
           v-for="os in ['windows', 'macos', 'linux']"
           :key="os"
-          :title="os === 'macos' ? 'macOS' : os.charAt(0).toUpperCase() + os.slice(1)"
           :os="os"
           :assets="release?.assets"
         />
