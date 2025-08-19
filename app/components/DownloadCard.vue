@@ -42,9 +42,9 @@ const osAssetTypes = [
   {
     os: 'linux',
     assets: [
-      { url: getAssetUrl('_x64.AppImage'), label: 'AppImage' },
-      { url: getAssetUrl('_x64.deb'), label: '.deb' },
-      { url: getAssetUrl('_x64.rpm'), label: '.rpm' },
+      { url: getAssetUrl('_amd64.AppImage'), label: 'AppImage' },
+      { url: getAssetUrl('_amd64.deb'), label: '.deb' },
+      { url: getAssetUrl('x86_64.rpm'), label: '.rpm' },
     ],
   },
 ]
