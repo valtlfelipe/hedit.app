@@ -42,11 +42,11 @@ const { data: release, pending: isLoading, error: isError } = await useAsyncData
           try again later.
         </p>
         <p class="mt-3 text-lg text-muted-foreground sm:mt-4">
-          Latest Version: {{ release.tag_name }}
+          Latest Version: {{ release?.tag_name }}
         </p>
         <!-- <p class="text-sm text-muted-foreground">Total Downloads: {totalDownloads}</p> -->
         <a
-          :href="release.html_url"
+          :href="release?.html_url"
           target="_blank"
           rel="noopener noreferrer"
           class="text-sm text-primary hover:underline mt-2 block"
