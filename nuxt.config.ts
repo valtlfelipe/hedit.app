@@ -44,6 +44,13 @@ export default defineNuxtConfig({
       deployConfig: true,
       nodeCompat: true,
     },
+
+    storage: {
+      kv: {
+        driver: 'cloudflare-kv-binding',
+        binding: 'KV',
+      },
+    },
   },
 
   vite: {

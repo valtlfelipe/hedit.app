@@ -11,6 +11,13 @@
 		"binding": "ASSETS",
 		"directory": "./.output/public/"
 	},
+	"kv_namespaces": [
+		{
+			"binding": "KV",
+			"id": "5e489e66f3cf488b8acfac19ca101b71",
+			"preview_id": "HEDIT_KV_PREVIEW"
+		}
+	],
 	"observability": {
 		"enabled": true
 	}

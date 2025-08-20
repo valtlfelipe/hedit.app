@@ -10,11 +10,7 @@ useHead({
 })
 
 const fetchLatestRelease = async () => {
-  const response = await fetch(`https://api.github.com/repos/valtlfelipe/hedit/releases/latest`)
-  if (!response.ok) {
-    throw new Error('Network response was not ok')
-  }
-  return response.json()
+  return await $fetch(`/api/latest-release`)
 }
 
 const { data: release, pending: isLoading, error: isError } = await useAsyncData('release', fetchLatestRelease)
