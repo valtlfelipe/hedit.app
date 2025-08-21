@@ -1,4 +1,4 @@
-export default defineCachedEventHandler(async (event) => {
+export default defineCachedEventHandler(async () => {
   const response = await $fetch(`https://api.github.com/repos/valtlfelipe/hedit/releases/latest`, {
     headers: {
       'User-Agent': 'hedit.app website',
@@ -9,6 +9,6 @@ export default defineCachedEventHandler(async (event) => {
   maxAge: 60 * 60, // 1 hour
   name: 'github_release',
   group: 'api',
-  swr: true,
+  swr: false,
   base: 'kv',
 })
