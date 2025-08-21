@@ -46,6 +46,7 @@
             <a
               href="https://github.com/valtlfelipe/hedit"
               target="_blank"
+              @click="umTrackEvent('github_click')"
             >
               <LucideGithub class="w-4 h-4 mr-2" />
               GitHub
