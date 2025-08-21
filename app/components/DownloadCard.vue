@@ -91,7 +91,10 @@ const hasAssets = computed(() => osData.value && osData.value.assets.length > 0 
           :class="{ 'bg-primary/70': !isDetected && detectedOS !== 'unknown' }"
           as-child
         >
-          <a :href="asset.url"><LucideDownload class="w-5 h-5" />{{ asset.label }}</a>
+          <a
+            :href="asset.url"
+            @click="umTrackEvent('download_click', { os: props.os, asset: asset.label })"
+          ><LucideDownload class="w-5 h-5" />{{ asset.label }}</a>
         </Button>
       </template>
       <Button
