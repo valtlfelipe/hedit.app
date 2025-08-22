@@ -25,6 +25,12 @@
           >
             Pricing
           </NuxtLink>
+          <NuxtLink
+            to="/docs"
+            class="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Docs
+          </NuxtLink>
           <a
             href="https://github.com/valtlfelipe/hedit/issues/new/choose"
             target="_blank"

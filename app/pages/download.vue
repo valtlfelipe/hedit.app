@@ -59,10 +59,11 @@ const { data: release, pending: isLoading, error: isError } = await useAsyncData
         />
       </div>
       <p class="text-xs text-muted-foreground mt-8">
-        Trouble opening macOS app? See <a
-          href="https://github.com/valtlfelipe/hedit#%EF%B8%8F-installation--usage-macos"
+        Trouble opening macOS app? See <NuxtLink
+          to="/docs/getting-started/installation#macos-specific"
           class="text-primary hover:underline"
-        >instructions here</a>.
+        >instructions here .
+        </nuxtlink>
       </p>
     </main>
     <Footer />

@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
-  modules: ['@nuxt/eslint', '@nuxt/scripts', '@nuxt/image', '@nuxt/icon', '@nuxt/fonts', 'shadcn-nuxt', 'nuxt-lucide-icons', '@nuxtjs/device', '@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxtjs/seo', 'nuxt-umami', 'nitro-cloudflare-dev'],
+  modules: ['@nuxt/eslint', '@nuxt/ui-pro', '@nuxt/content', '@nuxt/scripts', '@nuxt/image', '@nuxt/icon', '@nuxt/fonts', 'shadcn-nuxt', 'nuxt-lucide-icons', '@nuxtjs/device', '@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxtjs/seo', 'nuxt-umami', 'nitro-cloudflare-dev'],
   devtools: { enabled: true },
 
   app: {
@@ -30,10 +30,18 @@ export default defineNuxtConfig({
     name: 'Hedit - Modern Hosts File Editor',
   },
 
+  content: {
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
+  },
+
   routeRules: {
     '/terms': { prerender: true },
     '/privacy': { prerender: true },
     '/human': { prerender: true },
+    '/docs': { redirect: '/docs/getting-started', prerender: false },
   },
   compatibilityDate: '2025-08-18',
 
@@ -89,7 +97,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    strictNuxtContentPaths: true,
+    // strictNuxtContentPaths: true,
     exclude: ['/thank-you'],
   },
 

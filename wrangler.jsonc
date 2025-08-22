@@ -18,6 +18,14 @@
 			"preview_id": "HEDIT_KV_PREVIEW"
 		}
 	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "hedit-site",
+			"database_id": "d8825386-80c4-4b00-859c-040203c1df92",
+			"preview_database_id": "hedit-site-preview"
+		}
+	],
 	"observability": {
 		"enabled": true
 	}
