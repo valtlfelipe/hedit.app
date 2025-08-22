@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
-  modules: ['@nuxt/eslint', '@nuxt/ui-pro', '@nuxt/content', '@nuxt/scripts', '@nuxt/image', '@nuxt/icon', '@nuxt/fonts', 'shadcn-nuxt', 'nuxt-lucide-icons', '@nuxtjs/device', '@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxtjs/seo', 'nuxt-umami', 'nitro-cloudflare-dev'],
+  modules: ['@nuxt/eslint', '@nuxt/ui-pro', '@nuxt/scripts', '@nuxt/image', '@nuxt/icon', '@nuxt/fonts', 'shadcn-nuxt', 'nuxt-lucide-icons', '@nuxtjs/device', '@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxtjs/seo', 'nuxt-umami', '@nuxt/content', 'nitro-cloudflare-dev'],
   devtools: { enabled: true },
 
   app: {
@@ -43,6 +43,7 @@ export default defineNuxtConfig({
     '/privacy': { prerender: true },
     '/human': { prerender: true },
     '/pricing': { prerender: true },
+    '/download': { prerender: false },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
   },
   compatibilityDate: '2025-08-18',
@@ -53,6 +54,11 @@ export default defineNuxtConfig({
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
+    },
+
+    prerender: {
+      crawlLinks: true,
+      routes: ['/sitemap.xml'],
     },
 
     storage: {
