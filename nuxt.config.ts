@@ -45,6 +45,7 @@ export default defineNuxtConfig({
     '/pricing': { prerender: true },
     '/download': { prerender: false },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
+    '/docs/getting-started': { prerender: true },
   },
   compatibilityDate: '2025-08-18',
 
@@ -58,7 +59,7 @@ export default defineNuxtConfig({
 
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml'],
+      routes: ['/sitemap.xml', '/docs'],
     },
 
     storage: {
