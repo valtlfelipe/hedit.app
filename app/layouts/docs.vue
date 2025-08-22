@@ -4,6 +4,11 @@ const { data: navigation } = await useAsyncData('navigation', () => queryCollect
 })
 
 provide('navigation', navigation)
+if (navigation.value) {
+  prerenderRoutes(navigation.value.map(d => d.children ? d.children.map(c => c.path) : [d.path]).flat())
+}
+
+console.log(JSON.stringify(navigation.value))
 
 // const links = [{
 //   label: 'Docs',
@@ -22,6 +27,12 @@ provide('navigation', navigation)
 // const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('docs'), {
 //   server: false,
 // })
+
+// defineRouteRules({ prerender: true })
+
+// const { data: posts } = await useFetch('/api/posts')
+
+// // Tell Nuxt to pre-render all blog posts
 </script>
 
 <template>

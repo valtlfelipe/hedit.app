@@ -38,9 +38,11 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/': { prerender: true },
     '/terms': { prerender: true },
     '/privacy': { prerender: true },
     '/human': { prerender: true },
+    '/pricing': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
   },
   compatibilityDate: '2025-08-18',
