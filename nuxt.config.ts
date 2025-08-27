@@ -20,6 +20,21 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
+      script: [{
+        'src': 'https://cdn.databuddy.cc/databuddy.js',
+        'async': true,
+        'crossorigin': 'anonymous',
+        'data-client-id': 'NT9QaNDL98JMacXtnf3ZU',
+        'data-track-outgoing-links': 'true',
+        'data-track-interactions': 'true',
+        'data-track-engagement': 'true',
+        'data-track-scroll-depth': 'true',
+        'data-track-exit-intent': 'true',
+        'data-track-bounce-rate': 'true',
+        'data-track-web-vitals': 'true',
+        'data-track-errors': 'true',
+        'data-enable-batching': 'true',
+      }],
     },
   },
 
