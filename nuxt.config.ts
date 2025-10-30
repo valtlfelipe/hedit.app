@@ -127,8 +127,8 @@ export default defineNuxtConfig({
   },
 
   umami: {
-    id: '4483964e-a22c-4ba7-9857-be25f8b1e55b',
-    host: 'https://umami.bluelab.cloud',
+    id: 'ce4b5c56-91d9-4193-b07e-9d6b154dfb27',
+    host: 'https://sun.felipevm.dev',
     autoTrack: true,
     useDirective: false,
     ignoreLocalhost: true,
