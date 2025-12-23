@@ -47,7 +47,8 @@ export default defineNuxtConfig({
     '/docs': { redirect: '/docs/getting-started', prerender: false },
     '/docs/getting-started': { prerender: true },
   },
-  compatibilityDate: '2025-08-18',
+
+  compatibilityDate: '2025-12-09',
 
   nitro: {
     preset: 'cloudflare_module',
@@ -59,7 +60,7 @@ export default defineNuxtConfig({
 
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml', '/docs'],
+      routes: ['/', '/sitemap.xml', '/docs'],
       autoSubfolderIndex: false,
     },
 

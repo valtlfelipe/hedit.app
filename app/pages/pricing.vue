@@ -26,26 +26,6 @@ useHead({
         </p>
       </div>
 
-      <div class="max-w-4xl w-full mx-auto mb-8">
-        <div class="relative rounded-2xl shadow-xl overflow-hidden border border-primary/30 bg-gradient-to-br from-primary/20 via-background to-secondary/30 px-8 py-7 flex items-center gap-6 backdrop-blur-md">
-          <div class="flex items-center justify-center h-14 w-14 rounded-full bg-gradient-to-tr from-primary to-secondary shadow-md">
-            <span class="text-3xl">🎉</span>
-          </div>
-          <div class="flex-1">
-            <div class="text-2xl font-extrabold text-primary mb-1 drop-shadow">
-              Early Adopters Special
-            </div>
-            <div class="text-md text-muted-foreground mb-3">
-              Support the development and get <span class="font-bold text-primary">50% off</span> your first year!
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-sm font-medium text-muted-foreground">Use coupon:</span>
-              <span class="text-sm font-bold px-4 py-1 rounded-full bg-primary/80 text-white">HELAUNCH</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
         <Card class="flex flex-col bg-card">
           <CardHeader>
