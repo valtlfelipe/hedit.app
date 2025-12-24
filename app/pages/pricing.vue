@@ -1,8 +1,8 @@
 <script setup>
 useSeoMeta({
   title: 'Pricing',
-  description: 'All features free for personal use. Support ongoing development with a commercial license.',
-  ogDescription: 'All features free for personal use. Support ongoing development with a commercial license.',
+  description: 'Currently free. Pricing to be defined.',
+  ogDescription: 'Currently free. Pricing to be defined.',
 })
 
 useHead({
@@ -19,86 +19,28 @@ useHead({
           Pricing
         </h1>
         <p class="mt-3 text-lg text-muted-foreground sm:mt-4">
-          All features free for personal use.
+          Currently free.
         </p>
         <p class="mt-1 text-lg text-muted-foreground">
-          Support ongoing development with a commercial license.
+          Pricing to be defined.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
-        <Card class="flex flex-col bg-card">
-          <CardHeader>
-            <CardTitle>Personal</CardTitle>
-            <CardDescription>For personal use</CardDescription>
-          </CardHeader>
-          <CardContent class="flex-grow">
-            <div class="text-4xl font-bold mb-4">
-              $0
-            </div>
-            <ul class="space-y-2">
-              <li class="flex items-center">
-                <LucideCheck class="h-5 w-5 text-green-500 mr-2" />
-                <span>Personal use only</span>
-              </li>
-              <li class="flex items-center">
-                <LucideCheck class="h-5 w-5 text-green-500 mr-2" />
-                <span>Access all features</span>
-              </li>
-              <li class="flex items-center">
-                <LucideCheck class="h-5 w-5 text-green-500 mr-2" />
-                <span>Community support</span>
-              </li>
-            </ul>
-          </CardContent>
-          <CardFooter>
-            <Button
-              class="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-              as-child
-            >
-              <NuxtLink to="/download">Download Now</NuxtLink>
-            </Button>
-          </CardFooter>
-        </Card>
-        <Card class="flex flex-col bg-card border-primary">
-          <CardHeader>
-            <CardTitle>Commercial</CardTitle>
-            <CardDescription>For professional and commercial use</CardDescription>
-          </CardHeader>
-          <CardContent class="flex-grow">
-            <div class="text-4xl font-bold mb-4">
-              $40<span class="text-lg font-normal text-muted-foreground">/user per year</span>
-            </div>
-            <ul class="space-y-2">
-              <li class="flex items-center">
-                <LucideCheck class="h-5 w-5 text-green-500 mr-2" />
-                <span>Commercial use</span>
-              </li>
-              <li class="flex items-center">
-                <LucideCheck class="h-5 w-5 text-green-500 mr-2" />
-                <span>Email support</span>
-              </li>
-              <li class="flex items-center">
-                <LucideCheck class="h-5 w-5 text-green-500 mr-2" />
-                <span>Support indie developer</span>
-              </li>
-            </ul>
-          </CardContent>
-          <CardFooter>
-            <Button
-              class="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-              as-child
-            >
-              <a
-                href="https://www.creem.io/payment/prod_7UiSIBPjvS5GxHahFnq2U2"
-                @click="umTrackEvent('buy_now')"
-              >Buy Now</a>
-            </Button>
-          </CardFooter>
-        </Card>
-      </div>
+      <Card class="max-w-2xl mx-auto bg-card">
+        <CardContent class="pt-6">
+          <div class="text-center">
+            <LucideHeart class="h-12 w-12 text-red-500 mx-auto mb-4" />
+            <h2 class="text-2xl font-semibold mb-2">
+              Free for Now
+            </h2>
+            <p class="text-muted-foreground">
+              Enjoy all features for free while we work on defining our pricing model. Stay tuned for updates!
+            </p>
+          </div>
+        </CardContent>
+      </Card>
       <p class="mt-8 text-sm text-center text-muted-foreground max-w-2xl px-4">
-        For bulk purchases and other inquiries, contact hello@hedit.app.
+        For inquiries, contact hello@hedit.app.
       </p>
     </main>
     <Footer />
