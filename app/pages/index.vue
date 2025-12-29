@@ -16,8 +16,9 @@ useHead({
     <main>
       <HeroSection />
       <FeaturesSection />
-      <CodeSection />
+      <!-- <CodeSection /> -->
       <!-- {/* <TestimonialsSection /> */} -->
+      <ProfileSection />
       <CTASection />
     </main>
     <Footer />

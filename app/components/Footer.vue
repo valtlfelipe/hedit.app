@@ -29,13 +29,15 @@
             </li>
             <li>
               <a
-                href="#"
+                href="https://github.com/valtlfelipe/hedit/issues/new?template=bug.yml"
+                target="_blank"
                 class="hover:text-foreground transition-colors"
               >Bug Reports</a>
             </li>
             <li>
               <a
-                href="#"
+                href="https://github.com/valtlfelipe/hedit/issues/new?template=feature.yml"
+                target="_blank"
                 class="hover:text-foreground transition-colors"
               >Feature Requests</a>
             </li>

@@ -13,9 +13,11 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        // { property: 'og:image', content: 'https://hedit.app/og_image.png' },
+        { property: 'og:image', content: 'https://hedit.app/img/og-image.png' },
         { property: 'og:title', content: 'Hedit - Modern Hosts File Editor' },
-        { property: 'og:description', content: 'Fast and intuitive hosts file editor with syntax highlighting, multiple files, and validation. The modern tool for who care about their workflow.' },
+        {
+          property: 'og:description', content: 'Fast and intuitive hosts file editor with syntax highlighting, remote files, and validation. The modern hosts file editor for people who care about their tools.',
+        },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

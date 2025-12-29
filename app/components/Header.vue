@@ -43,6 +43,7 @@
         </nav>
 
         <div class="flex items-center gap-3">
+          <ThemeToggle />
           <Button
             variant="ghost"
             size="sm"
@@ -54,8 +55,7 @@
               target="_blank"
               @click="umTrackEvent('github_click')"
             >
-              <LucideGithub class="w-4 h-4 mr-2" />
-              GitHub
+              <LucideGithub class="w-4 h-4" />
             </a>
           </Button>
           <Button
