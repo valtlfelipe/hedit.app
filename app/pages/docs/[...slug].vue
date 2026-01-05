@@ -38,7 +38,7 @@ useSeoMeta({
 
     <UPageBody>
       <ContentRenderer
-        v-if="page.body"
+        v-if="page"
         :value="page"
       />
 
@@ -51,7 +51,10 @@ useSeoMeta({
       v-if="page?.body?.toc?.links?.length"
       #right
     >
-      <UContentToc :links="page.body.toc.links" />
+      <UContentToc
+        title="Table of Contents"
+        :links="page.body.toc.links"
+      />
     </template>
   </UPage>
 </template>

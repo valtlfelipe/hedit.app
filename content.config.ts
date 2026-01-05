@@ -5,7 +5,7 @@ export default defineContentConfig({
   collections: {
     docs: defineCollection(
       asSitemapCollection({
-        source: 'docs/**/*.md',
+        source: 'docs/**/**',
         type: 'page',
       }),
     ),
