@@ -1,6 +1,6 @@
 <template>
   <section class="px-4 overflow-hidden">
-    <div class="relative z-10 text-center max-w-4xl mx-auto mt-40">
+    <div class="relative z-10 text-center max-w-6xl mx-auto mt-32">
       <!-- <div class="mb-8 flex justify-center">
         <NuxtImg
           src="/img/logo.webp"
@@ -19,7 +19,7 @@
         <span class="bg-gradient-primary bg-clip-text text-transparent">
           hosts file editor
         </span>
-        for
+        for<br>
         <span class="bg-gradient-primary bg-clip-text text-transparent">
           modern people
         </span>
@@ -33,10 +33,12 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
         <Button
           size="lg"
-          class="bg-gradient-primary hover:shadow-glow transition-all duration-300 px-8 py-6 text-lg font-semibold"
+          class="bg-gradient-primary hover:opacity-90 transition-all duration-300 px-8 py-6 text-lg font-semibold text-white"
           as-child
         >
-          <NuxtLink to="/download">
+          <NuxtLink
+            to="/download"
+          >
             <LucideDownload class="w-5 h-5 mr-2" />
             Download Now
           </NuxtLink>
@@ -72,10 +74,16 @@
         <em>Available for Mac & Linux. Soon available for Windows.</em>
       </div>
 
-      <div class="inline-flex mt-12">
+      <div class="mt-12">
         <NuxtImg
-          src="/img/hedit-screenshot-dark.webp"
+          src="/img/hedit-screenshot-dark.png"
           alt="Hedit Screenshot"
+          class="dark:block hidden max-w-full h-auto "
+        />
+        <NuxtImg
+          src="/img/hedit-screenshot-light.png"
+          alt="Hedit Screenshot"
+          class="dark:hidden block max-w-full h-auto "
         />
       </div>
     </div>

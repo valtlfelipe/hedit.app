@@ -26,7 +26,7 @@ useHead({
             Get Started with Hedit
           </h2>
           <p class="text-muted-foreground mb-6">
-            Download the latest version of Hedit below and activate your license in the app.
+            Download the latest version of Hedit below and activate your license in the app with the key sent to your email.
           </p>
           <Button
             as-child

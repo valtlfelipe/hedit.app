@@ -13,13 +13,13 @@ useHead({
 <template>
   <div class="min-h-screen bg-background">
     <Header />
-    <main>
+    <main class="pt-20">
       <HeroSection />
       <FeaturesSection />
       <!-- <CodeSection /> -->
       <!-- {/* <TestimonialsSection /> */} -->
       <ProfileSection />
-      <CTASection />
+      <!-- <CTASection /> -->
     </main>
     <Footer />
   </div>
